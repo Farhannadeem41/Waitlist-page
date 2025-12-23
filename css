@@ -1,0 +1,89 @@
+/* Page layout */
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 640px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+
+/* Zoho overrides */
+#crmWebToEntityForm {
+  width: 100%;
+  padding: 0 !important;
+}
+
+.zcwf_title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Labels & fields */
+.zcwf_col_lab label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.zcwf_col_lab span {
+  color: #d93025;
+}
+
+.zcwf_col_fld input[type="text"] {
+  width: 100% !important;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  font-size: 14px;
+}
+
+.zcwf_row {
+  margin-bottom: 16px;
+}
+
+/* Buttons */
+.button-row {
+  display: flex;
+  gap: 12px;
+}
+
+.zcwf_button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.formsubmit {
+  background: linear-gradient(135deg, #0279ff, #00a3f3);
+  color: #ffffff;
+}
+
+.zcwf_button.secondary {
+  background: #f2f4f7;
+  color: #344054;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 16px;
+    padding: 24px;
+  }
+}
