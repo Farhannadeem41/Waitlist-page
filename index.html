@@ -5,156 +5,183 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zeqi Waitlist</title>
 
-  <!-- Custom styling -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Minimal safe overrides -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-wrapper {
+      background: #ffffff;
+      max-width: 640px;
+      width: 100%;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .zcwf_title {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .formsubmit.zcwf_button {
+      color: #ffffff !important;
+      background: linear-gradient(0deg, #0279FF 0%, #00A3F3 100%);
+      border-radius: 6px;
+      padding: 8px 14px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .zcwf_button {
+      border-radius: 6px;
+    }
+  </style>
 </head>
+
 <body>
 
-  <div class="page-container">
-    <div class="form-container">
+<div class="form-wrapper">
 
-      <!-- ===== ZOHO FORM START (UNCHANGED LOGIC) ===== -->
-      <div
-        id="crmWebToEntityForm"
-        class="zcwf_lblLeft crmWebToEntityForm"
-        style="background-color: white;color: black;max-width: 600px;"
-      >
-        <form
-          id="webform7184939000000655003"
-          action="https://crm.zoho.com/crm/WebToLeadForm"
-          name="WebToLeads7184939000000655003"
-          method="POST"
-          onSubmit="javascript:document.charset='UTF-8'; return checkMandatory7184939000000655003()"
-          accept-charset="UTF-8"
-        >
+  <!-- ===== ZOHO FORM START ===== -->
+  <div id="crmWebToEntityForm"
+       class="zcwf_lblLeft crmWebToEntityForm"
+       style="background-color:white;color:black;max-width:600px;">
 
-          <input type="text" style="display:none;" name="xnQsjsdp"
-            value="f91224370ab97d82d3dc7a5a6392dddcb46d59e6d6c97ad3be1cfe8ca211145c" />
-          <input type="hidden" name="zc_gad" id="zc_gad" value="" />
-          <input type="text" style="display:none;" name="xmIwtLD"
-            value="6caae12b9dcae655ed09806cc61b78ded392a460177c203000b6e7c155ec40a30cfdaf2f4a3b3b6986890c1a28616f88" />
-          <input type="text" style="display:none;" name="actionType" value="TGVhZHM=" />
-          <input type="text" style="display:none;" name="returnURL" value="null" />
+    <form
+      id="webform7184939000000655030"
+      action="https://crm.zoho.com/crm/WebToLeadForm"
+      name="WebToLeads7184939000000655030"
+      method="POST"
+      accept-charset="UTF-8"
+      onSubmit="javascript:document.charset='UTF-8'; return checkMandatory7184939000000655030();">
 
-          <div class="zcwf_title">Zeqi – Early Access Waitlist</div>
+      <!-- Required hidden fields -->
+      <input type="text" style="display:none;" name="xnQsjsdp"
+        value="1d266a8155c59d54822b69170b67ae4bba52c337cac4eb35313905c52e43c7cd" />
+      <input type="hidden" name="zc_gad" id="zc_gad" value="" />
+      <input type="text" style="display:none;" name="xmIwtLD"
+        value="9d67e3f54618f9bd8af403146b233d57d495d61f7efe4dd065807f39d00f4378ea0082ef990fb89daea343266184b401" />
+      <input type="text" style="display:none;" name="actionType" value="TGVhZHM=" />
+      <input type="text" style="display:none;" name="returnURL" value="null" />
 
-          <!-- First Name -->
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab">
-              <label for="First_Name">First Name</label>
-            </div>
-            <div class="zcwf_col_fld">
-              <input type="text" id="First_Name" name="First Name" maxlength="40" />
-            </div>
-          </div>
+      <div class="zcwf_title">Zeqi Waitlist</div>
 
-          <!-- Last Name -->
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab">
-              <label for="Last_Name">Last Name <span>*</span></label>
-            </div>
-            <div class="zcwf_col_fld">
-              <input type="text" id="Last_Name" name="Last Name" maxlength="80" />
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab">
-              <label for="Email">Email</label>
-            </div>
-            <div class="zcwf_col_fld">
-              <input type="text" id="Email" name="Email" ftype="email" maxlength="100" />
-            </div>
-          </div>
-
-          <!-- Company -->
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab">
-              <label for="Company">Company <span>*</span></label>
-            </div>
-            <div class="zcwf_col_fld">
-              <input type="text" id="Company" name="Company" maxlength="200" />
-            </div>
-          </div>
-
-          <!-- Phone -->
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab">
-              <label for="Phone">Phone</label>
-            </div>
-            <div class="zcwf_col_fld">
-              <input type="text" id="Phone" name="Phone" maxlength="30" />
-            </div>
-          </div>
-
-          <input type="text" style="display:none;" name="aG9uZXlwb3Q" value="" />
-
-          <!-- Buttons -->
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab"></div>
-            <div class="zcwf_col_fld button-row">
-              <input
-                type="submit"
-                class="formsubmit zcwf_button"
-                value="Join Waitlist"
-              />
-              <input
-                type="reset"
-                class="zcwf_button secondary"
-                value="Reset"
-              />
-            </div>
-          </div>
-
-          <!-- VALIDATION SCRIPTS (UNCHANGED) -->
-          <script>
-            function validateEmail7184939000000655003() {
-              var form = document.forms['WebToLeads7184939000000655003'];
-              var emailFld = form.querySelectorAll('[ftype=email]');
-              for (var i = 0; i < emailFld.length; i++) {
-                var emailVal = emailFld[i].value.trim();
-                if (emailVal.length !== 0) {
-                  var atpos = emailVal.indexOf('@');
-                  var dotpos = emailVal.lastIndexOf('.');
-                  if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
-                    alert('Please enter a valid email address.');
-                    emailFld[i].focus();
-                    return false;
-                  }
-                }
-              }
-              return true;
-            }
-
-            function checkMandatory7184939000000655003() {
-              var mndFileds = ['Company', 'Last Name'];
-              var fldLangVal = ['Company', 'Last Name'];
-
-              for (var i = 0; i < mndFileds.length; i++) {
-                var fieldObj = document.forms['WebToLeads7184939000000655003'][mndFileds[i]];
-                if (fieldObj && fieldObj.value.trim().length === 0) {
-                  alert(fldLangVal[i] + ' cannot be empty.');
-                  fieldObj.focus();
-                  return false;
-                }
-              }
-              return validateEmail7184939000000655003();
-            }
-          </script>
-
-          <!-- Analytics -->
-          <script
-            id="wf_anal"
-            src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet"
-          ></script>
-
-        </form>
+      <!-- First Name -->
+      <div class="zcwf_row">
+        <div class="zcwf_col_lab">
+          <label for="First_Name">First Name</label>
+        </div>
+        <div class="zcwf_col_fld">
+          <input type="text" id="First_Name" name="First Name" maxlength="40" />
+        </div>
       </div>
-      <!-- ===== ZOHO FORM END ===== -->
 
-    </div>
+      <!-- Last Name -->
+      <div class="zcwf_row">
+        <div class="zcwf_col_lab">
+          <label for="Last_Name">Last Name <span style="color:red">*</span></label>
+        </div>
+        <div class="zcwf_col_fld">
+          <input type="text" id="Last_Name" name="Last Name" maxlength="80" />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="zcwf_row">
+        <div class="zcwf_col_lab">
+          <label for="Email">Email</label>
+        </div>
+        <div class="zcwf_col_fld">
+          <input type="text" ftype="email" id="Email" name="Email" maxlength="100" />
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div class="zcwf_row">
+        <div class="zcwf_col_lab">
+          <label for="Company">Company <span style="color:red">*</span></label>
+        </div>
+        <div class="zcwf_col_fld">
+          <input type="text" id="Company" name="Company" maxlength="200" />
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="zcwf_row">
+        <div class="zcwf_col_lab">
+          <label for="Phone">Phone</label>
+        </div>
+        <div class="zcwf_col_fld">
+          <input type="text" id="Phone" name="Phone" maxlength="30" />
+        </div>
+      </div>
+
+      <input type="text" style="display:none;" name="aG9uZXlwb3Q" value="" />
+
+      <!-- Buttons -->
+      <div class="zcwf_row">
+        <div class="zcwf_col_lab"></div>
+        <div class="zcwf_col_fld">
+          <input type="submit" class="formsubmit zcwf_button" value="Join Waitlist" />
+          <input type="reset" class="zcwf_button" value="Reset" />
+        </div>
+      </div>
+
+      <!-- Validation scripts (unchanged logic) -->
+      <script>
+        function validateEmail7184939000000655030() {
+          var form = document.forms['WebToLeads7184939000000655030'];
+          var emailFld = form.querySelectorAll('[ftype=email]');
+          for (var i = 0; i < emailFld.length; i++) {
+            var emailVal = emailFld[i].value.trim();
+            if (emailVal.length) {
+              var atpos = emailVal.indexOf('@');
+              var dotpos = emailVal.lastIndexOf('.');
+              if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                alert('Please enter a valid email address.');
+                emailFld[i].focus();
+                return false;
+              }
+            }
+          }
+          return true;
+        }
+
+        function checkMandatory7184939000000655030() {
+          var mnd = ['Company', 'Last Name'];
+          for (var i = 0; i < mnd.length; i++) {
+            var f = document.forms['WebToLeads7184939000000655030'][mnd[i]];
+            if (f && !f.value.trim()) {
+              alert(mnd[i] + ' cannot be empty.');
+              f.focus();
+              return false;
+            }
+          }
+          return validateEmail7184939000000655030();
+        }
+      </script>
+
+      <!-- Zoho analytics (required) -->
+      <script
+        id="wf_anal"
+        src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet">
+      </script>
+
+    </form>
   </div>
+  <!-- ===== ZOHO FORM END ===== -->
+
+</div>
 
 </body>
 </html>
