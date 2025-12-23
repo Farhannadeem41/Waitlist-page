@@ -30,4 +30,131 @@
 
           <input type="text" style="display:none;" name="xnQsjsdp"
             value="f91224370ab97d82d3dc7a5a6392dddcb46d59e6d6c97ad3be1cfe8ca211145c" />
-          <input type="hidden" name="zc
+          <input type="hidden" name="zc_gad" id="zc_gad" value="" />
+          <input type="text" style="display:none;" name="xmIwtLD"
+            value="6caae12b9dcae655ed09806cc61b78ded392a460177c203000b6e7c155ec40a30cfdaf2f4a3b3b6986890c1a28616f88" />
+          <input type="text" style="display:none;" name="actionType" value="TGVhZHM=" />
+          <input type="text" style="display:none;" name="returnURL" value="null" />
+
+          <div class="zcwf_title">Zeqi – Early Access Waitlist</div>
+
+          <!-- First Name -->
+          <div class="zcwf_row">
+            <div class="zcwf_col_lab">
+              <label for="First_Name">First Name</label>
+            </div>
+            <div class="zcwf_col_fld">
+              <input type="text" id="First_Name" name="First Name" maxlength="40" />
+            </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="zcwf_row">
+            <div class="zcwf_col_lab">
+              <label for="Last_Name">Last Name <span>*</span></label>
+            </div>
+            <div class="zcwf_col_fld">
+              <input type="text" id="Last_Name" name="Last Name" maxlength="80" />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="zcwf_row">
+            <div class="zcwf_col_lab">
+              <label for="Email">Email</label>
+            </div>
+            <div class="zcwf_col_fld">
+              <input type="text" id="Email" name="Email" ftype="email" maxlength="100" />
+            </div>
+          </div>
+
+          <!-- Company -->
+          <div class="zcwf_row">
+            <div class="zcwf_col_lab">
+              <label for="Company">Company <span>*</span></label>
+            </div>
+            <div class="zcwf_col_fld">
+              <input type="text" id="Company" name="Company" maxlength="200" />
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="zcwf_row">
+            <div class="zcwf_col_lab">
+              <label for="Phone">Phone</label>
+            </div>
+            <div class="zcwf_col_fld">
+              <input type="text" id="Phone" name="Phone" maxlength="30" />
+            </div>
+          </div>
+
+          <input type="text" style="display:none;" name="aG9uZXlwb3Q" value="" />
+
+          <!-- Buttons -->
+          <div class="zcwf_row">
+            <div class="zcwf_col_lab"></div>
+            <div class="zcwf_col_fld button-row">
+              <input
+                type="submit"
+                class="formsubmit zcwf_button"
+                value="Join Waitlist"
+              />
+              <input
+                type="reset"
+                class="zcwf_button secondary"
+                value="Reset"
+              />
+            </div>
+          </div>
+
+          <!-- VALIDATION SCRIPTS (UNCHANGED) -->
+          <script>
+            function validateEmail7184939000000655003() {
+              var form = document.forms['WebToLeads7184939000000655003'];
+              var emailFld = form.querySelectorAll('[ftype=email]');
+              for (var i = 0; i < emailFld.length; i++) {
+                var emailVal = emailFld[i].value.trim();
+                if (emailVal.length !== 0) {
+                  var atpos = emailVal.indexOf('@');
+                  var dotpos = emailVal.lastIndexOf('.');
+                  if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) {
+                    alert('Please enter a valid email address.');
+                    emailFld[i].focus();
+                    return false;
+                  }
+                }
+              }
+              return true;
+            }
+
+            function checkMandatory7184939000000655003() {
+              var mndFileds = ['Company', 'Last Name'];
+              var fldLangVal = ['Company', 'Last Name'];
+
+              for (var i = 0; i < mndFileds.length; i++) {
+                var fieldObj = document.forms['WebToLeads7184939000000655003'][mndFileds[i]];
+                if (fieldObj && fieldObj.value.trim().length === 0) {
+                  alert(fldLangVal[i] + ' cannot be empty.');
+                  fieldObj.focus();
+                  return false;
+                }
+              }
+              return validateEmail7184939000000655003();
+            }
+          </script>
+
+          <!-- Analytics -->
+          <script
+            id="wf_anal"
+            src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet"
+          ></script>
+
+        </form>
+      </div>
+      <!-- ===== ZOHO FORM END ===== -->
+
+    </div>
+  </div>
+
+</body>
+</html>
